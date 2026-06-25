@@ -7,13 +7,13 @@
 
 <!-- Animated Typing -->
 <a href="https://git.io/typing-svg">
- <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=+Predicting+Credit+Risk+with+ML;+CIBIL-Inspired+Scoring+System;+End-to-End+ML+Pipeline+%2B+Streamlit;+Real-time+Risk+Classification+Engine" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=Predicting+Credit+Risk+with+ML;CIBIL-Inspired+Scoring+System;End-to-End+ML+Pipeline+%2B+Streamlit;Real-time+Risk+Classification+Engine" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Badges -->
-[![Live App](https://img.shields.io/badge/%20Live%20App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://credit-risk-modeling-classification-creditiq.streamlit.app/)
+[![Live App](https://img.shields.io/badge/Live%20App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://credit-risk-modeling-classification-creditiq.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
@@ -22,7 +22,6 @@
 
 <br/>
 
-<!-- View Count -->
 ![Profile Views](https://komarev.com/ghpvc/?username=rushikreddie&color=blueviolet&style=for-the-badge&label=REPO+VIEWS)
 
 </div>
@@ -31,23 +30,23 @@
 
 ## Table of Contents
 
-- [ Project Overview](#-project-overview)
-- [ Business Value](#-business-value)
-- [ Dataset](#-dataset)
-- [ ML Pipeline](#-ml-pipeline)
-- [ Models & Accuracy](#-models--accuracy)
-- [ Model Comparison](#-model-comparison)
-- [ Key Features](#-key-features)
-- [ Live App — CreditIQ](#-live-app--creditiq)
-- [ Project Structure](#-project-structure)
-- [ Setup & Installation](#-setup--installation)
-- [ Tech Stack](#-tech-stack)
-- [ Connect with Me](#-connect-with-me)
+- [Project Overview](#project-overview)
+- [Business Value](#business-value)
+- [Dataset](#dataset)
+- [ML Pipeline](#ml-pipeline)
+- [Models & Accuracy](#models--accuracy)
+- [Model Comparison](#model-comparison)
+- [Key Features](#key-features)
+- [Live App — CreditIQ](#live-app--creditiq)
+- [Project Structure](#project-structure)
+- [Setup & Installation](#setup--installation)
+- [Tech Stack](#tech-stack)
+- [Connect with Me](#connect-with-me)
 
 ---
 
 <div align="center">
-<h2> Project Overview</h2>
+<h2>Project Overview</h2>
 </div>
 
 > **CreditIQ** is a production-grade, end-to-end **Credit Risk Classification System** that mirrors the **CIBIL scoring methodology** used by Indian financial institutions. It classifies loan applicants into risk categories — **Poor, Average, Good, and Excellent** — by training and comparing multiple machine learning models on real-world banking and CIBIL data.
@@ -57,43 +56,26 @@ This system enables banks, NBFCs, and fintech companies to make **data-driven le
 ---
 
 <div align="center">
-<h2> Business Value</h2>
+<h2>Business Value</h2>
 </div>
 
-<table>
-<tr>
-<td align="center"></td>
-<td><b>Loan Default Prevention</b> — Identifies high-risk borrowers before disbursement, reducing NPAs</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td><b>Cost Reduction</b> — Automated risk assessment cuts manual underwriting time by up to 80%</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td><b>Real-Time Decisions</b> — Instant classification via Streamlit app for credit officers and analysts</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td><b>CIBIL-Aligned Scoring</b> — Categories mirror industry-standard credit rating bands</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td><b>Explainability</b> — Feature importance insights reveal the <i>why</i> behind every prediction</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td><b>Democratized Access</b> — Web-deployed app makes ML credit scoring available to any institution</td>
-</tr>
-</table>
+| | |
+|:---:|:---|
+| **Loan Default Prevention** | Identifies high-risk borrowers before disbursement, reducing NPAs |
+| **Cost Reduction** | Automated risk assessment cuts manual underwriting time by up to 80% |
+| **Real-Time Decisions** | Instant classification via Streamlit app for credit officers and analysts |
+| **CIBIL-Aligned Scoring** | Categories mirror industry-standard credit rating bands |
+| **Explainability** | Feature importance insights reveal the *why* behind every prediction |
+| **Democratized Access** | Web-deployed app makes ML credit scoring available to any institution |
 
 ---
 
 <div align="center">
-<h2> Dataset</h2>
+<h2>Dataset</h2>
 </div>
 
 The project uses a **Leading Indian Bank & CIBIL Real-World Dataset**, containing borrower financial profiles and credit histories. Key features include:
+
 | Feature Category | Examples |
 |:---|:---|
 | **Financial** | Annual Income, Loan Amount, Outstanding Debt, Monthly EMI |
@@ -107,100 +89,100 @@ The project uses a **Leading Indian Bank & CIBIL Real-World Dataset**, containin
 ---
 
 <div align="center">
-<h2> ML Pipeline</h2>
+<h2>ML Pipeline</h2>
 </div>
 
 ```
 Raw CIBIL + Bank Data
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Data Preprocessing │ ← Handle nulls, encode categoricals, fix data types
+│  Data Preprocessing │  ← Handle nulls, encode categoricals, fix data types
 └─────────────────────┘
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Exploratory Data │ ← Correlation heatmaps, distribution plots, outlier analysis
-│ Analysis (EDA) │
+│  Exploratory Data   │  ← Correlation heatmaps, distribution plots, outlier analysis
+│  Analysis (EDA)     │
 └─────────────────────┘
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Feature Engineering│ ← Label encoding, ordinal mapping, feature selection
+│  Feature Engineering│  ← Label encoding, ordinal mapping, feature selection
 └─────────────────────┘
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Class Imbalance │ ← SMOTE / class-weight balancing
-│ Handling │
+│  Class Imbalance    │  ← SMOTE / class-weight balancing
+│  Handling           │
 └─────────────────────┘
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Model Training & │ ← 6 ML models trained, cross-validated, tuned
-│ Hyperparameter │
-│ Tuning │
+│  Model Training &   │  ← 6 ML models trained, cross-validated, tuned
+│  Hyperparameter     │
+│  Tuning             │
 └─────────────────────┘
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Model Evaluation │ ← Accuracy, F1-Score, ROC-AUC, Confusion Matrix
+│  Model Evaluation   │  ← Accuracy, F1-Score, ROC-AUC, Confusion Matrix
 └─────────────────────┘
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Best Model Saved │ ← Serialized with pickle/joblib
-│ (.pkl) │
+│  Best Model Saved   │  ← Serialized with pickle/joblib
+│  (.pkl)             │
 └─────────────────────┘
- │
- ▼
+        │
+        ▼
 ┌─────────────────────┐
-│ Streamlit │ ← CreditIQ — Interactive live web app
-│ Deployment │
+│  Streamlit          │  ← CreditIQ — Interactive live web app
+│  Deployment         │
 └─────────────────────┘
 ```
 
 ---
 
 <div align="center">
-<h2> Models & Accuracy</h2>
+<h2>Models & Accuracy</h2>
 </div>
 
 Six classification algorithms were trained, evaluated, and compared on the CIBIL dataset:
 
 <br/>
 
-### Random Forest Classifier
+### 🥇 Random Forest Classifier
 ```
-Algorithm : Ensemble of Decision Trees (Bagging)
-Accuracy : ~92–93%
-Strengths : Handles non-linearity, robust to overfitting, captures feature interactions
-Weakness : Slower inference, less interpretable than single trees
-Use Case : Primary production model — best balance of accuracy and stability
+Algorithm     : Ensemble of Decision Trees (Bagging)
+Accuracy      : ~92–93%
+Strengths     : Handles non-linearity, robust to overfitting, captures feature interactions
+Weakness      : Slower inference, less interpretable than single trees
+Use Case      : Primary production model — best balance of accuracy and stability
 ```
 > **Why it works:** Random Forest builds hundreds of decorrelated trees and aggregates votes, making it extremely robust for imbalanced, high-dimensional financial datasets.
 
 ---
 
-### XGBoost Classifier
+### 🥈 XGBoost Classifier
 ```
-Algorithm : Gradient Boosted Trees (Sequential Ensemble)
-Accuracy : ~91–92%
-Strengths : High predictive power, handles missing values, regularization built-in
-Weakness : Computationally intensive, more hyperparameters to tune
-Use Case : Runner-up model — excellent for feature-rich datasets
+Algorithm     : Gradient Boosted Trees (Sequential Ensemble)
+Accuracy      : ~91–92%
+Strengths     : High predictive power, handles missing values, regularization built-in
+Weakness      : Computationally intensive, more hyperparameters to tune
+Use Case      : Runner-up model — excellent for feature-rich datasets
 ```
 > **Why it works:** XGBoost iteratively corrects previous model errors, making it one of the strongest algorithms for structured/tabular financial data.
 
 ---
 
-### Decision Tree Classifier
+### 🥉 Decision Tree Classifier
 ```
-Algorithm : Single CART Decision Tree
-Accuracy : ~85–87%
-Strengths : Fully interpretable, fast, visual decision rules
-Weakness : Prone to overfitting without pruning
-Use Case : Baseline interpretable model — useful for regulatory explainability
+Algorithm     : Single CART Decision Tree
+Accuracy      : ~85–87%
+Strengths     : Fully interpretable, fast, visual decision rules
+Weakness      : Prone to overfitting without pruning
+Use Case      : Baseline interpretable model — useful for regulatory explainability
 ```
 > **Why it works:** Decision Trees create human-readable if-then rules that compliance officers can audit and validate.
 
@@ -208,11 +190,11 @@ Use Case : Baseline interpretable model — useful for regulatory explainability
 
 ### Logistic Regression
 ```
-Algorithm : Linear Classification (Sigmoid Function)
-Accuracy : ~78–82%
-Strengths : Simple, fast, probabilistic output, highly interpretable
-Weakness : Struggles with non-linear relationships
-Use Case : Baseline model and probability calibration reference
+Algorithm     : Linear Classification (Sigmoid Function)
+Accuracy      : ~78–82%
+Strengths     : Simple, fast, probabilistic output, highly interpretable
+Weakness      : Struggles with non-linear relationships
+Use Case      : Baseline model and probability calibration reference
 ```
 > **Why it works:** Logistic Regression gives probability estimates (e.g., 72% chance of default), which aligns with how banks communicate credit decisions.
 
@@ -220,11 +202,11 @@ Use Case : Baseline model and probability calibration reference
 
 ### K-Nearest Neighbors (KNN)
 ```
-Algorithm : Instance-Based Learning
-Accuracy : ~80–83%
-Strengths : No training phase, captures local patterns
-Weakness : Slow at inference, sensitive to scale and irrelevant features
-Use Case : Pattern-matching on similar borrower profiles
+Algorithm     : Instance-Based Learning
+Accuracy      : ~80–83%
+Strengths     : No training phase, captures local patterns
+Weakness      : Slow at inference, sensitive to scale and irrelevant features
+Use Case      : Pattern-matching on similar borrower profiles
 ```
 > **Why it works:** KNN identifies borrowers who are statistically similar to known defaulters/non-defaulters using distance metrics.
 
@@ -232,52 +214,53 @@ Use Case : Pattern-matching on similar borrower profiles
 
 ### Support Vector Machine (SVM)
 ```
-Algorithm : Maximum Margin Hyperplane Classifier
-Accuracy : ~82–85%
-Strengths : Effective in high-dimensional space, robust with kernel tricks
-Weakness : Does not scale well to very large datasets
-Use Case : Strong alternative for complex non-linear boundaries
+Algorithm     : Maximum Margin Hyperplane Classifier
+Accuracy      : ~82–85%
+Strengths     : Effective in high-dimensional space, robust with kernel tricks
+Weakness      : Does not scale well to very large datasets
+Use Case      : Strong alternative for complex non-linear boundaries
 ```
 > **Why it works:** SVM finds the optimal decision boundary between risk classes, making it powerful when the classes are not linearly separable.
 
 ---
 
 <div align="center">
-<h2> Model Comparison</h2>
+<h2>Model Comparison</h2>
 </div>
-| Model | Accuracy | F1-Score | ROC-AUC | Recommended |
-|:---|:---:|:---:|:---:|:---:|
-| **Random Forest** | **~92–93%** | **High** | **~0.97** | **Best Model** |
-| **XGBoost** | ~91–92% | High | ~0.96 | Production Ready |
-| **SVM** | ~82–85% | Medium-High | ~0.89 |  Scalability Concern |
-| **KNN** | ~80–83% | Medium | ~0.87 |  Slow Inference |
-| **Decision Tree** | ~85–87% | Medium-High | ~0.88 | Interpretable |
-| **Logistic Regression** | ~78–82% | Medium | ~0.84 | Baseline/Explainable |
+
+| Model | Accuracy | F1-Score | ROC-AUC | Notes |
+|:---|:---:|:---:|:---:|:---|
+| 🥇 **Random Forest** | **~92–93%** | **High** | **~0.97** | **Best Model — Deployed** |
+| 🥈 **XGBoost** | ~91–92% | High | ~0.96 | Production Ready |
+| 🥉 **Decision Tree** | ~85–87% | Medium-High | ~0.88 | Interpretable |
+| **SVM** | ~82–85% | Medium-High | ~0.89 | Scalability Concern |
+| **KNN** | ~80–83% | Medium | ~0.87 | Slow Inference |
+| **Logistic Regression** | ~78–82% | Medium | ~0.84 | Baseline / Explainable |
 
 > **Winner: Random Forest** — delivers the best combination of accuracy, recall on minority classes, and generalization. Deployed as the production model in CreditIQ.
 
 ---
 
 <div align="center">
-<h2> Key Features</h2>
+<h2>Key Features</h2>
 </div>
 
-```python
- Multi-class classification → Poor / Standard / Good credit tiers
- CIBIL score integration → Mirrors India's real-world credit bureau logic
- 6 ML models compared → Fair benchmark with same train/test split
- Feature importance plots → Know which variables drive credit risk
- Confusion matrix analysis → Understand model error patterns
- Class imbalance handling → Ensures minority class (defaults) are correctly learned
- Streamlit web app → Interactive, real-time prediction interface
- Pickle model export → Production-ready serialized model
- EDA with visualizations → Correlation heatmaps, box plots, distribution charts
+```
+[+]  Multi-class classification  →  Poor / Standard / Good credit tiers
+[+]  CIBIL score integration     →  Mirrors India's real-world credit bureau logic
+[+]  6 ML models compared        →  Fair benchmark with same train/test split
+[+]  Feature importance plots    →  Know which variables drive credit risk
+[+]  Confusion matrix analysis   →  Understand model error patterns
+[+]  Class imbalance handling    →  Ensures minority class (defaults) are correctly learned
+[+]  Streamlit web app           →  Interactive, real-time prediction interface
+[+]  Pickle model export         →  Production-ready serialized model
+[+]  EDA with visualizations     →  Correlation heatmaps, box plots, distribution charts
 ```
 
 ---
 
 <div align="center">
-<h2> Live App — CreditIQ</h2>
+<h2>Live App — CreditIQ</h2>
 </div>
 
 <div align="center">
@@ -298,35 +281,35 @@ Use Case : Strong alternative for complex non-linear boundaries
 ---
 
 <div align="center">
-<h2> Project Structure</h2>
+<h2>Project Structure</h2>
 </div>
 
 ```
- Credit-Risk-Modeling-Classification/
+Credit-Risk-Modeling-Classification/
 │
-├── app/ # Streamlit web application
-│ ├── app.py # Main Streamlit app (CreditIQ)
-│ ├── model files (.pkl) # Serialized trained model
-│ └── helper utilities # Preprocessing & prediction logic
+├── app/                          # Streamlit web application
+│   ├── app.py                    # Main Streamlit app (CreditIQ)
+│   ├── model files (.pkl)        # Serialized trained model
+│   └── helper utilities          # Preprocessing & prediction logic
 │
-├── datasets/ # Raw and processed data
-│ └── CIBIL + bank datasets # Leading Indian Bank real-world data
+├── datasets/                     # Raw and processed data
+│   └── CIBIL + bank datasets     # Leading Indian Bank real-world data
 │
-├── code.ipynb # Complete ML notebook
-│ ├── 01 - Data Loading & EDA
-│ ├── 02 - Preprocessing & Feature Engineering
-│ ├── 03 - Model Training (6 Models)
-│ ├── 04 - Evaluation & Comparison
-│ └── 05 - Best Model Export
+├── code.ipynb                    # Complete ML notebook
+│   ├── 01 - Data Loading & EDA
+│   ├── 02 - Preprocessing & Feature Engineering
+│   ├── 03 - Model Training (6 Models)
+│   ├── 04 - Evaluation & Comparison
+│   └── 05 - Best Model Export
 │
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
 ```
 
 ---
 
 <div align="center">
-<h2> Setup & Installation</h2>
+<h2>Setup & Installation</h2>
 </div>
 
 ```bash
@@ -336,8 +319,8 @@ cd Credit-Risk-Modeling-Classification
 
 # 2. Create a virtual environment
 python -m venv venv
-source venv/bin/activate # macOS/Linux
-venv\Scripts\activate # Windows
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
 
 # 3. Install dependencies
 pip install -r requirements.txt
@@ -353,10 +336,11 @@ jupyter notebook code.ipynb
 ---
 
 <div align="center">
-<h2> Tech Stack</h2>
+<h2>Tech Stack</h2>
 </div>
 
 <div align="center">
+
 | Layer | Technology |
 |:---|:---|
 | **Language** | Python 3.10+ |
@@ -374,7 +358,7 @@ jupyter notebook code.ipynb
 ---
 
 <div align="center">
-<h2> Connect with Me</h2>
+<h2>Connect with Me</h2>
 </div>
 
 <div align="center">
@@ -389,9 +373,8 @@ jupyter notebook code.ipynb
 
 <div align="center">
 
-<!-- Footer Wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
 
-<i> If this project helped you, give it a star — it motivates more open-source work!</i>
+<i>If this project helped you, consider leaving a star — it motivates more open-source work.</i>
 
 </div>
