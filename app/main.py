@@ -31,6 +31,12 @@ html, body, .stApp {
     max-width: 100% !important;
 }
 
+@media (max-width: 768px) {
+    .block-container {
+        padding: 0 1rem !important;
+    }
+}
+
 /* ── Top nav bar ── */
 .nav-bar {
     background: rgba(10,15,30,0.95);
