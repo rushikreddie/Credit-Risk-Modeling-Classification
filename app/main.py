@@ -27,7 +27,7 @@ html, body, .stApp {
 /* ── Hide Streamlit chrome ── */
 #MainMenu, footer, header { visibility: hidden; }
 .block-container {
-    padding: 0 !important;
+    padding: 0 0 0 2rem !important;
     max-width: 100% !important;
 }
 
